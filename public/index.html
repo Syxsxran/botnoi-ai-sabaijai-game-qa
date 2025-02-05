@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 20 Questions</title>
+    <script src="https://static.line-scdn.net/liff/edge/2.19/sdk.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h2>AI Guessing Game</h2>
+    <p id="question">AI กำลังคิดคำถาม...</p>
+    
+    <button onclick="sendAnswer('yes')">✅ ใช่</button>
+    <button onclick="sendAnswer('no')">❌ ไม่ใช่</button>
+    <button onclick="sendAnswer('close')">🔍 ใกล้เคียง</button>
+    <button onclick="manualAnswer()">✍️ ตอบเอง</button>
+
+    <input type="text" id="customAnswer" placeholder="พิมพ์คำตอบ..." style="display:none;">
+    <button onclick="sendCustomAnswer()" style="display:none;">ส่ง</button>
+</body>
+</html>
